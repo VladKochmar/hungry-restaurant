@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:regular,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Concert+One:&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.title {
+  @apply relative pb-4 text-center font-title uppercase leading-snug before:absolute before:bottom-0 before:left-1/2 before:h-1 before:w-16 before:-translate-x-1/2 before:rounded-full before:bg-yellow-medium;
+}
+
+.subtitle {
+  @apply text-center text-base font-bold leading-normal md:text-lg;
+}
+
+.label {
+  @apply text-nowrap text-xs uppercase leading-tight tracking-[.3em] text-white;
+}
+
+.btn {
+  @apply inline-flex items-center justify-center rounded border border-yellow-medium bg-yellow-medium p-5 text-center text-xs font-bold uppercase leading-relaxed text-white transition duration-300 hover:bg-transparent hover:text-yellow-medium;
+}
+
+.input {
+  @apply rounded bg-gray-medium p-5 text-sm text-gray-dark placeholder:text-opacity-50;
+}
+
+.ibg {
+  @apply absolute left-0 top-0 h-full w-full object-cover object-center;
+}
+
+.lock {
+  @apply touch-none overflow-hidden;
+}
+
+.vertical-lr {
+  @media (width > 768px) {
+    writing-mode: vertical-lr;
+  }
+}
